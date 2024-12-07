@@ -33,7 +33,7 @@ This is the repo where all my dreamteam tasks will be updated.
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-04">Task-04</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-04-web-dev-basics">Web Dev Basics</td>
-      <td>Partial</td>
+      <td>2/4 Topics</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-05">Task-05</tda>
