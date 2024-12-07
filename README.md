@@ -23,11 +23,11 @@ This is the repo where all my dreamteam tasks will be updated.
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-02">Task-02</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-02-the-open-source-conventions--google-dorking">Open Source Conventions & Google Dorking</td>
-      <td>Todo</td>
+      <td>Completed</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-03">Task-03</tda>
-      <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-03-automate-the-boring-stuff">Hello, World!</td>
+      <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-03-automate-the-boring-stuff">Automate the Boring stuff with Python</td>
       <td>Partial (Just exercises)</td>
     </tr>
     <tr>
