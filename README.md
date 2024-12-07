@@ -60,10 +60,5 @@ This is the repo where all my dreamteam tasks will be updated.
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-09-backend-development">Backend Development</td>
       <td>Most of the features</td>
     </tr>
-    <tr>
-      <td><a href="https://github.com/Aakashchoudhary24/amfoss-tasks/tree/main/task-10">Task-10</tda>
-      <td><a href="https://github.com/hrideshmg/Operation-Pixel-Merge">Operation Pixel Merge</td>
-      <td>Completed</td>
-    </tr>
   </tbody>
 </table>
