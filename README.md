@@ -28,7 +28,7 @@ This is the repo where all my dreamteam tasks will be updated.
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-03">Task-03</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-03-automate-the-boring-stuff">Automate the Boring stuff with Python</td>
-      <td>Partial (Just exercises)</td>
+      <td>-</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-04">Task-04</tda>
