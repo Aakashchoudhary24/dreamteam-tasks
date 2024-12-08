@@ -23,17 +23,17 @@ This is the repo where all my dreamteam tasks will be updated.
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-02">Task-02</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-02-the-open-source-conventions--google-dorking">Open Source Conventions & Google Dorking</td>
-      <td>Todo</td>
+      <td>Completed</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-03">Task-03</tda>
-      <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-03-automate-the-boring-stuff">Hello, World!</td>
-      <td>Partial (Just exercises)</td>
+      <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-03-automate-the-boring-stuff">Automate the Boring stuff with Python</td>
+      <td>-</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-04">Task-04</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-04-web-dev-basics">Web Dev Basics</td>
-      <td>Partial</td>
+      <td>2/4 Topics</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-05">Task-05</tda>
@@ -53,17 +53,12 @@ This is the repo where all my dreamteam tasks will be updated.
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-08">Task-08</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-08-frontend-development">Frontend Development</td>
-      <td>Most of the features</td>
+      <td>Attempted</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-09">Task-09</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-09-backend-development">Backend Development</td>
-      <td>Most of the features</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/Aakashchoudhary24/amfoss-tasks/tree/main/task-10">Task-10</tda>
-      <td><a href="https://github.com/hrideshmg/Operation-Pixel-Merge">Operation Pixel Merge</td>
-      <td>Completed</td>
+      <td>Attempted</td>
     </tr>
   </tbody>
 </table>
