@@ -1,0 +1,26 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+env/
+*.log
+
+# Flask
+instance/
+*.sqlite3
+
+# Secrets
+credentials.py
+
+# IDE and Editor files
+*.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
