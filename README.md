@@ -53,12 +53,12 @@ This is the repo where all my dreamteam tasks will be updated.
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-08">Task-08</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-08-frontend-development">Frontend Development</td>
-      <td>Most of the features</td>
+      <td>Attempted</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-09">Task-09</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-09-backend-development">Backend Development</td>
-      <td>Most of the features</td>
+      <td>Attempted</td>
     </tr>
   </tbody>
 </table>
