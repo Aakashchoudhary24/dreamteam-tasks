@@ -9,23 +9,26 @@ export default function WatchList() {
     const [newTask, setNewTask] = useState('');
     const [error, setError] = useState('');
     const [username, setUsername] = useState('');
+    const [token, setToken] = useState('');
 
     useEffect(() => {
+        const storedToken = sessionStorage.getItem('access_token');
+        if (storedToken) {
+            setToken(storedToken);
+        } else {
+            setError('Please log in');
+        }
+
         fetchProfile();
         fetchTasks();
-    }, []);
-
-    const token = sessionStorage.getItem('accessToken');
+    }, [token]);
 
     const fetchProfile = async () => {
+        if (!token) return;
+        
         try {
             console.log('Token:', token);
     
-            if (!token) {
-                setError('Please log in');
-                return;
-            }
-        
             const response = await fetch('http://localhost:5000/api/profile', {
                 method: 'GET',
                 headers: {
@@ -45,19 +48,15 @@ export default function WatchList() {
                 setError(`Failed to fetch profile: ${responseData.error || 'Unknown error'}`);
             }
         } catch (err) {
-            console.error('Profile fetch error:', err);
+            console.log('Profile fetch error:', err);
             setError('An error occurred while fetching profile');
         }
     };
 
-
     const fetchTasks = async () => {
-        try {
-            if (!token) {
-                setError('Please log in to view tasks');
-                return;
-            }
+        if (!token) return;
 
+        try {
             const response = await fetch('http://localhost:5000/api/tasks', {
                 method: 'GET',
                 headers: {
@@ -158,7 +157,7 @@ export default function WatchList() {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'
                 }
-            }); 
+            });
 
             if (response.ok) {
                 const filteredTasks = tasks.filter(task => task.id !== taskId);
@@ -199,23 +198,20 @@ export default function WatchList() {
                             </tr>
                         </thead>
                         <tbody>
-                            {tasks.map(task => (
-                                <tr key={task.id}>
-                                    <td>{task.description}</td>
-                                    <td>{task.status}</td>
-                                    <td>
-                                        <select 
-                                            value={task.status} 
-                                            onChange={(e) => handleUpdateTaskStatus(task.id, e.target.value)}
-                                        >
-                                            <option value="Pending">Pending</option>
-                                            <option value="Watching">Watching</option>
-                                            <option value="Completed">Completed</option>
-                                        </select>
-                                        <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
-                                    </td>
-                                </tr>
-                            ))}
+                        {tasks.map((task, index) => (
+                            <tr key={task.id || index}>
+                            <td>{task.description || 'No description'}</td>
+                            <td>{task.status || 'No status'}</td>
+                            <td>
+                                <select value={task.status} onChange={(e) => handleUpdateTaskStatus(task.id, e.target.value)}>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Watching">Watching</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+                                <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+                            </td>
+                        </tr>
+                        ))}
                         </tbody>
                     </table>
                 </div>

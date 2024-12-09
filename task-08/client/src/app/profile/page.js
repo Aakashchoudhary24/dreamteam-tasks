@@ -8,10 +8,19 @@ export default function ProfilePage() {
     const [username, setUsername] = useState(''); 
 
     useEffect(() => {
+        const token = sessionStorage.getItem('access_token');
+        console.log('Token in ProfilePage:', token);
+    }, []);
+    
+
+    useEffect(() => {
         const fetchProfile = async () => {
             try {
-                const token = sessionStorage.getItem('access_token');
-                {/* error being shown in this line - subject must be a string and UNPROCESSABLE ENTITY 422, unable to fix yet*/}
+                const token = sessionStorage.getItem('access_token')
+                if (!token) {
+                    console.log('No token found');
+                    return;
+                }
                 const response = await fetch('http://localhost:5000/api/profile', {
                     method: 'GET',
                     headers: {
@@ -19,20 +28,23 @@ export default function ProfilePage() {
                         'Content-Type': 'application/json'
                     }
                 });
-                const data = await response.json();
-                console.log(data); {/* printing the data to console cos I can't resolve the error*/}
                 if (response.ok) {
+                    const data = await response.json();
                     setUsername(data.user.username);
+                } else if (response.status === 401 || response.status === 403) {
+                    sessionStorage.removeItem('access_token');
+                    window.location.href = '/login';
                 } else {
-                    console.log('Error fetching profile:');
+                    console.log('Error fetching profile:', response.status, response.statusText);
                 }
             } catch (error) {
-                console.log('An error occurred');
+                console.log('An error occurred:', error);
             }
         };
-
+    
         fetchProfile();
     }, []);
+    
     return (
         <div className="main">
             <Navbar />

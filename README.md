@@ -1,5 +1,4 @@
 # dreamteam-tasks
-This is the repo where all my dreamteam tasks will be updated. 
 <table>
   <thead>
     <tr>
@@ -43,12 +42,12 @@ This is the repo where all my dreamteam tasks will be updated.
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-06">Task-06</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-05-not-a-srs-doc">Wireframe the Skeleton</td>
-      <td>Unattempted</td>
+      <td>Attempted</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-07">Task-07</tda>
       <td><a href="https://github.com/traboda/DreamTeam-tasks?tab=readme-ov-file#task-07-figma-design-task">Figma Design Task</td>
-      <td>Attempted</td>
+      <td>Completed</td>
     </tr>
     <tr>
       <td><a href="https://github.com/Aakashchoudhary24/dreamteam-tasks/tree/main/task-08">Task-08</tda>

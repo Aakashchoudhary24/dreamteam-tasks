@@ -28,7 +28,7 @@ export default function LoginPage() {
             const data = await response.json();
 
             if (response.ok) {
-                sessionStorage.setItem('accessToken', data.access_token);
+                sessionStorage.setItem('access_token', data.access_token);
                 alert('Login successful! Redirecting...');
                 window.location.href='/';
             } else {

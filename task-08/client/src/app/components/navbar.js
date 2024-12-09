@@ -3,23 +3,20 @@
 import Link from 'next/link';
 import '../styles/navbar.css';
 import { useState, useEffect } from 'react';
-import { redirect } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+
 
 export default function Navbar() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const router = useRouter(null);
   const handleLogout = () => {
-    sessionStorage.removeItem('accessToken');
+    sessionStorage.removeItem('access_token');
     sessionStorage.removeItem('user');
     setIsAuthenticated(false);
     setIsMenuOpen(false);
-    redirect('/')
-  };
-
-  const showProfile = () => {
-    setIsMenuOpen(false);
-    redirect('/profile');
+    router.push('/');
   };
 
   const toggleMenu = () => {
@@ -31,7 +28,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    const token = sessionStorage.getItem('accessToken');
+    const token = sessionStorage.getItem('access_token');
     if (token) {
       setIsAuthenticated(true);
     }
@@ -84,7 +81,7 @@ export default function Navbar() {
             </li>
             {isAuthenticated && (
               <li>
-                <button className='nav-button' onClick={showProfile}>PROFILE</button>
+                <Link href='/profile'>PROFILE</Link>
               </li>
             )}
             {isAuthenticated && (

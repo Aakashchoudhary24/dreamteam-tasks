@@ -12,7 +12,7 @@ export default function TrackPage() {
         genre: '',
         summary: '',
     });
-    const token = sessionStorage.getItem('accessToken');
+    const token = sessionStorage.getItem('access_token');
     const fetchTracks = async () => {
         try {
             const response = await fetch('http://localhost:5000/api/track', {
